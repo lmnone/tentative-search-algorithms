@@ -15,7 +15,7 @@ y = f(x), x \subseteq [0,1]
 x = g(y), y \subseteq [0,1]
 $$
 
-#### Additional condition 1
+##### Additional requirement 1
 
 Functions are set only “speculatively”. Those, tabulation and interpolation to obtain an arbitrary $y=f(x)$ is not expected. This condition is due to the fact that an algorithm based on interpolation and tabulation will require guaranteed >N steps to calculate. Where N is the number of discretization points.
 
@@ -27,7 +27,7 @@ $$
 
 where $\lambda$ is some logical expression on the elements
 
-#### Let's say we have Task:
+##### Let's say we have Task:
 
 <u>Find a fixed point of the composition of these functions, if the number of decreasing functions in the composition is odd</u>
 
@@ -46,11 +46,11 @@ $$
 
 ------
 
-#### Hypothesis 1:
+##### Hypothesis 1:
 
 For n = 2, one can write out exactly the truth table of discarding intervals. 
 
-An example for monotonically increasing and monotonically decreasing combination of (f,g):
+An example[**Table 1**] for monotonically increasing and monotonically decreasing combination of (f,g):
 
 | Compare result (f,g) | A $\triangledown$ | A $\triangle$ | B $\triangledown$ | B $\triangle$ |
 | -------------------- | ----------------- | ----- | ----- | ----- |
@@ -61,7 +61,7 @@ An example for monotonically increasing and monotonically decreasing combination
 
 Meaning of $\triangledown$ and $\triangle$ is moving to lower or upper interval parts
 
-#### Problem solving for n = 2
+##### Problem solving for n = 2
 
 Let
 
@@ -128,4 +128,47 @@ $$
 $$
 
 Where $b_{t}^{i}$ are boolean variables
+
+The following condition must be met to reach a solution:
+
+##### Condition A
+
+$$
+\Im_{A}: max(z_{i}) - min(z_{i}) \geq 0.5 \to 
+\left(max(x_{i}) - min(x_{i}) > 0.5\right) \vee 
+\left(max(y_{i}) - min(y_{i}) > 0.5\right)
+$$
+
+------
+
+##### Statement 1
+
+Table 1 can be obtained as a solution to the maximum problem:
+
+$$
+maximize \sum_{ \omega \in { x,y,z } } 
+(b_{\omega}^{0} + b_{\omega}^{1} ) 
+$$
+
+Under constraints: 
+
+$$
+\begin{matrix}
+ \Im_{2}^{\circ }(x,y) \\
+ \Im_{2}^{\circ }(y,z) \\
+ \Im_{A} \\
+ \Im_{\underline{3}}( \omega )  \\
+ \Im_{\overline{3}}( \omega )   \\
+ \sum_{ i \in { 0,1 } } b_{\omega}^{i} < 2 \\
+ b_{z}^{i} = b_{x}^{i}
+\end{matrix}
+$$
+
+
+Function setup $\Im_{2}^{\circ }(x,y)$, $\Im_{2}^{\circ }(y,z)$ in case of n = 2 could be:
+
+| f                | g                |
+| ---------------- | ---------------- |
+| $\Im_{2}^{+}(x,y)$ | $\Im_{2}^{-}(y,z)$ |
+| $\Im_{2}^{-}(x,y)$ | $\Im_{2}^{+}(y,z)$ |
 
