@@ -12,15 +12,13 @@ $$
 
 #### Additional condition 1
 
-Functions are set only “speculatively”. Those, tabulation and interpolation to obtain an arbitrary
-$$
-y=f(x)
-$$
-is not expected. This condition is due to the fact that an algorithm based on interpolation and tabulation will require guaranteed >N steps to calculate. Where N is the number of discretization points.
+Functions are set only “speculatively”. Those, tabulation and interpolation to obtain an arbitrary $y=f(x)$ is not expected. This condition is due to the fact that an algorithm based on interpolation and tabulation will require guaranteed >N steps to calculate. Where N is the number of discretization points.
 
 Functions can be defined as space elements:
+
 $$
 \Im^{\Lambda }(x,y) \overset{def}{=} \Lambda(x,y,\lambda)
 $$
-where $\Lambda$ is some logical expression on the elements
+
+where $\lambda$ is some logical expression on the elements
 
