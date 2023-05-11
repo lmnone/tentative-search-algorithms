@@ -1,5 +1,10 @@
 # Fixed point prune-and-search & tentative search algorithms to solve simple geometry tasks
 
+[^Bibliography:]: Computing the largest inscribed isothetic rectangle J. Snoeyink ~1995. Tentative Prune-and-Search .. J. Snoeyink 1995. Fixed point theorem and its applications Alfred Tarski 1955.
+
+
+
+
 #### Definitions
 
 Given n continuous(or piecewise) monotonic functions, defined on the interval [0,1] and takes values also in [0,1]. Let's start with n = 2:
@@ -84,34 +89,43 @@ The superscript $\Im^{\circ}$ denotes the type of monotonic function (increasing
 
 Let's write the result of comparing function values in the form
 f(a) > c, a = 0.5, c = 0.5:
+
 $$
 \Im_{2}^{>+}(x,y): (x_{i} \geq 0.5 \to y_{i} > 0.5) \wedge (y_{i} \leq 0.5 \to x_{i} < 0.5 )=true
 $$
+
 Here, in addition, the superscript denotes the inequality sign > / <
 
 f(a) < c:
+
 $$
 \Im_2^{<+}(x,y): (x_{i} \leq 0.5 \to y_{i} < 0.5) \wedge (y_{i} \geq 0.5 \to x_{i} > 0.5) = true
 $$
+
 for monotonically increasing and
 
 f(a) > c:
+
 $$
 \Im_{2}^{>-}(x,y): (x_{i} \leq 0.5 \to y_{i}>0.5) \wedge (y_{i} \leq 0.5 \to x_{i} > 0.5)=true
 $$
+
 f(a) < c:
+
 $$
 \Im_{2}^{<-}(x,y): (x_{i} \geq 0.5 \to y_{i} < 0.5) \wedge ( y_{i} \geq 0.5 \to x_{i} < 0.5)=true
 $$
+
 for a monotonically decreasing function.
 
 Let us set the conditions for being in half-intervals:
+
 $$
 \begin{matrix}
  & \Im_{\underline{3}}(x): x_{i} \leq 0.5 = b_{x}^{0} & 
 \Im_{\overline{3}}(x): x_{i} \geq 0.5 = b_{x}^{1}
 \end{matrix}
-
 $$
+
 Where $b_{t}^{i}$ are boolean variables
 
