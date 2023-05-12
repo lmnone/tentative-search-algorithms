@@ -232,6 +232,15 @@ analogically, we calculate the complexity of the algorithm:
 
 
 
+#### Coming soon: 
+
+- auto-truth table generation using minizinc module for 2,3-functions composition 
+- usage sample for "longest chord, parallel to given direction" algorithm
+- merge 2 and 3 corners rectangle calculation into one API function.
+- precision test with random generated polygons.
+
+
+
 ------
 
 [1] Alt, H., Hsu, D., & Snoeyink, J. (1995). **Computing the largest inscribed isothetic rectangle**. In **Proceedings of the 7th Canadian Conference on Computational Geometry** (pp. 67-72).
