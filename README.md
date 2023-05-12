@@ -211,7 +211,7 @@ Iterations are calculated for 2 configs, so estimated iteration number for findi
 
 #### Calculating 3-corner rectangle
 
-Comparative result with "handmade" minizinc code ( [./minizinc/triangle-in-convex.mzn]())
+Comparative result with "handmade" minizinc code ( [./minizinc/triangle-in-convex.mzn](./minizinc/triangle-in-convex.mzn))
 
 ![scan_leading_tl](./results/3_corners/scan_leading_tl.jpg)
 
