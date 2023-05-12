@@ -230,3 +230,12 @@ analogically, we calculate the complexity of the algorithm:
 - Testing is it realy inscribed rectangle(is_point_in_convex_polygon) $\approx$  4log(N) , for only 1 point per-config testing
 - Together 2-3 corners search: $\approx$  <u>16log(N)</u> (2+4 configs)
 
+
+
+------
+
+[1] Alt, H., Hsu, D., & Snoeyink, J. (1995). **Computing the largest inscribed isothetic rectangle**. In **Proceedings of the 7th Canadian Conference on Computational Geometry** (pp. 67-72).
+
+[2] Snoeyink, J. (1995). **Tentative Prune-and-Search**. In **Proceedings of the 7th Canadian Conference on Computational Geometry** (pp. 73-78).
+
+[3] Tarski, A. (1955). **A fixed point theorem**. The American Mathematical Monthly, 62(1), 40-48.
