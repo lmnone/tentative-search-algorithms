@@ -1,6 +1,4 @@
----
-typora-root-url: ./results
----
+
 
 # Fixed point prune-and-search & tentative search algorithms to solve simple geometry tasks
 
@@ -194,15 +192,15 @@ Function setup $\Im_{2}^{\circ }(x,y)$, $\Im_{2}^{\circ }(y,z)$ in case of n = 2
 
 Algorithm part for 2-corner rectangle calculation (compute_largest_inscribed_isothetic_rectangle)
 
-![sample_95._scan_tr_bl](./2_corners/sample_95._scan_tr_bl.jpg)
+![sample_95._scan_tr_bl](./results/2_corners/sample_95._scan_tr_bl.jpg)
 
 Linear programming algorithm re-use (evaluation_compute_largest_inscribed_isothetic_rectangle__lp)
 
-![sample_95](./2_corners/sample_95.jpg)
+![sample_95](./results/2_corners/sample_95.jpg)
 
 Comparative results:
 
-![compare_lp](./2_corners/compare_lp.png)
+![compare_lp](./results/2_corners/compare_lp.png)
 
 Iterations are calculated for 2 configs, so estimated iteration number for finding 2 corners rectangle is:
 
@@ -215,15 +213,15 @@ Iterations are calculated for 2 configs, so estimated iteration number for findi
 
 Comparative result with "handmade" minizinc code ( [./minizinc/triangle-in-convex.mzn]())
 
-![scan_leading_tl](./3_corners/scan_leading_tl.jpg)
+![scan_leading_tl](./results/3_corners/scan_leading_tl.jpg)
 
-![scan_leading_bl](./3_corners/scan_leading_bl.jpg)
+![scan_leading_bl](./results/3_corners/scan_leading_bl.jpg)
 
-![scan_leading_br](./3_corners/scan_leading_br.jpg)
+![scan_leading_br](./results/3_corners/scan_leading_br.jpg)
 
-![scan_leading_tr](./3_corners/scan_leading_tr.jpg)
+![scan_leading_tr](./results/3_corners/scan_leading_tr.jpg)
 
-![compare_minizinc](./3_corners/compare_minizinc.png)
+![compare_minizinc](./results/3_corners/compare_minizinc.png)
 
 analogically, we calculate the complexity of the algorithm:
 
