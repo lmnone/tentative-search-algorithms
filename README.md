@@ -234,7 +234,7 @@ analogically, we calculate the complexity of the algorithm:
 
 #### Coming soon: 
 
-- auto-truth table generation using minizinc module for 2,3-functions composition 
+- auto-truth table generation using minizinc module for 3-functions composition 
 - usage sample for "longest chord, parallel to given direction" algorithm
 - merge 2 and 3 corners rectangle calculation into one API function.
 - precision test with random generated polygons.
