@@ -206,7 +206,7 @@ Iterations are calculated for 2 configs, so estimated iteration number for findi
 
 - Calculate extreme points $\approx$  4log(N), N is number of vertexes in convex polygon
 - Calculate 2-corners rectangle for 2 configs $\approx$  2log(N/2)
-- Testing is it realy inscribed rectangle(is_point_in_convex_polygon) $\approx$  8log(N), can be reduced to 4log(N) to check only opposite diagonal 
+- Testing is it really inscribed rectangle (is_point_in_convex_polygon) $\approx$  8log(N), can be reduced to 4log(N) to check only opposite diagonal 
 - So, totaly it's about 10log(N)
 
 #### Calculating 3-corner rectangle
@@ -227,7 +227,7 @@ analogically, we calculate the complexity of the algorithm:
 
 - Calculate extreme points $\approx$  4log(N), N is number of vertexes in convex polygon
 - Calculate 3-corners rectangle for 4 configs $\approx$  4log(N/4)
-- Testing is it realy inscribed rectangle(is_point_in_convex_polygon) $\approx$  4log(N) , for only 1 point per-config testing
+- Testing is it really inscribed rectangle (is_point_in_convex_polygon) $\approx$  4log(N) , for only 1 point per-config testing
 - Together 2-3 corners search: $\approx$  <u>16log(N)</u> (2+4 configs)
 
 

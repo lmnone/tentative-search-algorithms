@@ -20,7 +20,7 @@ class TruthTableGetter:
 
     def calc(self, inequalities_, composition_):
         instance = Instance(self.optimizer, self.functions_generator)
-        instance['functions'] = inequalities
+        instance['functions'] = inequalities_
         instance['composition'] = composition_
         result = instance.solve()
         print('found %d solutions' % len(result))
